@@ -1,0 +1,9 @@
+<div class="container">
+  <div style = "border-color:black" class = "bottoni-sf">
+    <div class="bottoni">
+      <button type="button" class="btn btn-secondary btn-lg" (click)="ordineAlf()">ALFABETICO</button>
+      <button type="button " class="btn btn-secondary btn-lg" (click)="ordineAlt()">ALTITUDINE (desc)</button>
+    </div>
+    <app-citta *ngFor="let citta of citta" [citta]="citta"></app-citta>
+  </div>
+</div>
